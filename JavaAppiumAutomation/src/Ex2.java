@@ -40,13 +40,13 @@ public class Ex2 {
     @Test                                                // маркер JUnit для тела теста
     public void TestSearch()                              // метод теста
     {
-       waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+       waitForElementAndClick(                            // ищем форму поиска по id и нажимаем на нее
+               By.id("org.wikipedia:id/search_container"),
                 "Cannot find 'Search Wikipedia' input",
                5
         );
 
-        waitForElementPresent(
+        waitForElementPresent(                            // ищем фоновый текстовый шаблон в поле поиска
                 By.xpath("//*[contains(@text,'Search…')]"),
                 "Cannot find search input field",
                 10
