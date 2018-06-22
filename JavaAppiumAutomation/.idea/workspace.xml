@@ -12,23 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ex2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ex2.java">
+      <file leaf-file-name="Ex4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ex4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ex3.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ex3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="177">
+              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,22 +39,21 @@
         <option value="$PROJECT_DIR$/src/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/Ex3.java" />
         <option value="$PROJECT_DIR$/src/Ex2.java" />
+        <option value="$PROJECT_DIR$/src/Ex4.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="240" />
-    <option name="y" value="25" />
+    <option name="x" value="210" />
+    <option name="y" value="39" />
     <option name="width" value="1621" />
-    <option name="height" value="1000" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,6 +71,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -104,43 +93,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Ex3.TestCancelSearch">
+  <component name="RunManager" selected="JUnit.Ex4.TestWordInSearchResult">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Ex2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Ex2" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Ex2.TestSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Ex2" />
-      <option name="METHOD_NAME" value="TestSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="Ex3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
@@ -159,13 +114,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Ex3.TestCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Ex3.TestWordInSearchResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Ex3" />
-      <option name="METHOD_NAME" value="TestCancelSearch" />
+      <option name="METHOD_NAME" value="TestWordInSearchResult" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -183,6 +138,40 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Ex3" />
       <option name="METHOD_NAME" value="testCompareArticleTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Ex4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex4" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Ex4.TestWordInSearchResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex4" />
+      <option name="METHOD_NAME" value="TestWordInSearchResult" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -232,19 +221,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Ex2" />
-      <item itemvalue="JUnit.Ex3.TestCancelSearch" />
+      <item itemvalue="JUnit.Ex3.TestWordInSearchResult" />
       <item itemvalue="JUnit.Ex3" />
-      <item itemvalue="JUnit.Ex2.TestSearch" />
       <item itemvalue="JUnit.Ex3.testCompareArticleTitle" />
+      <item itemvalue="JUnit.Ex4" />
+      <item itemvalue="JUnit.Ex4.TestWordInSearchResult" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Ex3.TestCancelSearch" />
-        <item itemvalue="JUnit.Ex3.testCompareArticleTitle" />
+        <item itemvalue="JUnit.Ex4.TestWordInSearchResult" />
+        <item itemvalue="JUnit.Ex4" />
         <item itemvalue="JUnit.Ex3" />
-        <item itemvalue="JUnit.Ex2" />
-        <item itemvalue="JUnit.Ex2.TestSearch" />
+        <item itemvalue="JUnit.Ex3.TestWordInSearchResult" />
+        <item itemvalue="JUnit.Ex3.testCompareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -262,18 +251,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 47m 42s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 48m 40s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 49m 51s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 52m 12s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 53m 02s.xml">
       <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
     </history-entry>
@@ -292,20 +269,32 @@
     <history-entry file="Ex3_TestCancelSearch - 2018.06.21 at 20h 17m 02s.xml">
       <configuration name="Ex3.TestCancelSearch" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Ex4 - 2018.06.22 at 17h 18m 31s.xml">
+      <configuration name="Ex4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 32m 55s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 37m 15s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 41m 19s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="25" width="1621" height="1000" extended-state="0" />
+    <frame x="210" y="39" width="1621" height="985" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3295711" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.33524683" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32844242" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32844242" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
@@ -315,8 +304,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -329,6 +318,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -407,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        <state relative-caret-position="493">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -417,8 +426,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="385">
+          <caret line="79" column="128" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
