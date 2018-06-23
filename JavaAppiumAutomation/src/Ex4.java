@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class Ex4 {
 
@@ -52,32 +53,29 @@ public class Ex4 {
                 "Sannot find search input",
                 5
         );
-        WebElement title_element = waitForElementsPresent(       // ждем появления элементов, содержащих указанный текст
+        List<WebElement> elements = waitForElementsPresent(       // ждем появления элементов, содержащих указанный текст
                 By.xpath("//*[@resource-id='org.wikipedia:id/search_results_list']//*[contains(@text,'Pumpkin')]"),
                 "Cannot find article title 'Pumpkin'",
                 20
         );
-        String word_in__title = title_element.getAttribute("text"); // передаем текст для сравнения в строку
 
-        Assert.assertEquals(                                           // сравниваем наш текст с ожидаемым результатом
-                "We see unexpected word",
-                "Pumpkin",
-                word_in__title
-        );
+        for(WebElement element: elements){                             // условие проверки для элементов из списка
+            Assert.assertTrue(element.getText().contains("Pumpkin"));
+        }
     }
 
-    private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) // установка метода ожидания и названий параметров
+    private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) // установка метода ожидания элемента и названий параметров
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n"); // текст ошибки, если не найден элемент + перенос на след строку
         return wait.until(ExpectedConditions.presenceOfElementLocated(by)); // условие появления нужного элемента
     }
 
-    private WebElement waitForElementsPresent(By by, String error_message, long timeoutInSeconds)
+    private List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutInSeconds) // установка метода ожидания многих элементов
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n");
-        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by)); // условие появления всех элементов, удовлетворяющих запросу
     }
 
     private WebElement waitForElementAndClick(By by, String error_message, long timeoutInSeconds) // метод ожидания и нажатия

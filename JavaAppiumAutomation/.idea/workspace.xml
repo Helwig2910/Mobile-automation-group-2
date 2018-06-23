@@ -15,8 +15,8 @@
       <file leaf-file-name="Ex4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ex4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="279">
+              <caret line="66" column="111" lean-forward="true" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,6 +54,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,7 +71,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -251,15 +251,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 53m 02s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 56m 50s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_testCompareArticleTitle - 2018.06.21 at 19h 58m 40s.xml">
-      <configuration name="Ex3.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Ex3_TestCancelSearch - 2018.06.21 at 20h 10m 02s.xml">
       <configuration name="Ex3.TestCancelSearch" configurationId="JUnit" />
     </history-entry>
@@ -281,20 +272,29 @@
     <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 41m 19s.xml">
       <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.23 at 11h 34m 08s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.23 at 11h 34m 39s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.23 at 11h 37m 59s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="210" y="39" width="1621" height="985" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.33524683" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33524683" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32844242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
@@ -318,6 +318,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Ex4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -332,9 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -352,9 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -416,7 +430,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="857">
           <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -426,18 +440,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
+        <state relative-caret-position="79">
           <caret line="79" column="128" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="79" column="25" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="279">
+          <caret line="66" column="111" lean-forward="true" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
