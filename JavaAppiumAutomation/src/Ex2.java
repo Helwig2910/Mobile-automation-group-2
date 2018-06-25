@@ -56,7 +56,7 @@ public class Ex2 {
         String search_title = title_element.getAttribute("text");              // передаем текст из элемента в переменную
 
         Assert.assertEquals(                                                      // сравниваем текст из элемента с эталоном
-                "Wrong title",
+                "Wrong placeholder at search field",
                 "Search…",
                 search_title
         );

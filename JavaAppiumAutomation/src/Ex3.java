@@ -1,6 +1,8 @@
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -10,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class Ex3 {
 
@@ -51,21 +54,14 @@ public class Ex3 {
                 "Sannot find search input",
                 5
         );
-        waitForElementPresent(                           // ищем 1й резальтат поисковой выдачи
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Software quality assurance']"),
-                "Cannot find 'Software quality assurance' title",
-                5
+        List<WebElement> list = waitForElementsPresent (      // ждем появления элементов определенного класса
+                By.xpath("//*[@resource-id='org.wikipedia:id/search_results_list']//*[contains(@class,'android.widget.LinearLayout')]"),
+                "Cannot find elements with class 'LinearLayout'",
+                15
         );
-        waitForElementPresent(                         // ищем 2й резальтат поисковой выдачи
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Software as a service']"),
-                "Cannot find 'Software as a servic' title",
-                5
-        );
-        waitForElementPresent(                         // ищем 3й резальтат поисковой выдачи
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Software quality']"),
-                "Cannot find 'Software quality' title",
-                5
-        );
+
+        Assert.assertTrue(list.size() > 1);         // сравниваем размер списка результатов поиска с единицей
+
         waitForElementAndClear(                        // очищаем поле ввода на всякий случай
                 By.id("org.wikipedia:id/search_src_text"),
                 "Cannot find search field",
@@ -76,9 +72,9 @@ public class Ex3 {
                 "Cannot find 'X' to cancel search",
                 5
         );
-        waitForElementNotPresent(                      // проверяем отсутствие на экране 1го результата поисковой выдачи
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Software quality assurance']"),
-                "Title 'Software quality assurance' is still present",
+        waitForElementNotPresent(                      // проверяем отсутствие на экране списка результатов поиска
+                By.id("org.wikipedia:id/search_results_list"),
+                "Search result list is still present",
                 5
         );
     }
@@ -88,6 +84,13 @@ public class Ex3 {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n"); // текст ошибки, если не найден элемент + перенос на след строку
         return wait.until(ExpectedConditions.presenceOfElementLocated(by)); // условие появления нужного элемента
+    }
+
+    private List<WebElement> waitForElementsPresent(By by, String error_message, long timeoutInSeconds) // установка метода ожидания многих элементов
+    {
+        WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+        wait.withMessage(error_message + "\n");
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by)); // условие появления всех элементов, удовлетворяющих запросу
     }
 
     private WebElement waitForElementAndClick(By by, String error_message, long timeoutInSeconds) // метод ожидания и нажатия
