@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Ex4.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ex4.java">
+      <file leaf-file-name="Ex2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ex2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="66" column="111" lean-forward="true" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
+            <state relative-caret-position="214">
+              <caret line="49" column="107" selection-start-line="49" selection-start-column="107" selection-end-line="49" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/Ex3.java" />
-        <option value="$PROJECT_DIR$/src/Ex2.java" />
         <option value="$PROJECT_DIR$/src/Ex4.java" />
+        <option value="$PROJECT_DIR$/src/Ex2.java" />
       </list>
     </option>
   </component>
@@ -54,6 +54,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -71,8 +73,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -93,9 +93,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Ex4.TestWordInSearchResult">
+  <component name="RunManager" selected="JUnit.Ex2">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Ex2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex2" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="Ex3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
@@ -121,23 +138,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Ex3" />
       <option name="METHOD_NAME" value="TestWordInSearchResult" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Ex3.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Ex3" />
-      <option name="METHOD_NAME" value="testCompareArticleTitle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -223,17 +223,17 @@
     <list>
       <item itemvalue="JUnit.Ex3.TestWordInSearchResult" />
       <item itemvalue="JUnit.Ex3" />
-      <item itemvalue="JUnit.Ex3.testCompareArticleTitle" />
       <item itemvalue="JUnit.Ex4" />
       <item itemvalue="JUnit.Ex4.TestWordInSearchResult" />
+      <item itemvalue="JUnit.Ex2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Ex2" />
         <item itemvalue="JUnit.Ex4.TestWordInSearchResult" />
         <item itemvalue="JUnit.Ex4" />
         <item itemvalue="JUnit.Ex3" />
         <item itemvalue="JUnit.Ex3.TestWordInSearchResult" />
-        <item itemvalue="JUnit.Ex3.testCompareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -251,27 +251,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Ex3_TestCancelSearch - 2018.06.21 at 20h 10m 02s.xml">
-      <configuration name="Ex3.TestCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_TestCancelSearch - 2018.06.21 at 20h 12m 27s.xml">
-      <configuration name="Ex3.TestCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex3_TestCancelSearch - 2018.06.21 at 20h 17m 02s.xml">
-      <configuration name="Ex3.TestCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex4 - 2018.06.22 at 17h 18m 31s.xml">
-      <configuration name="Ex4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 32m 55s.xml">
-      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 37m 15s.xml">
-      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.22 at 17h 41m 19s.xml">
-      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Ex4_TestWordInSearchResult - 2018.06.23 at 11h 34m 08s.xml">
       <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
     </history-entry>
@@ -280,6 +259,27 @@
     </history-entry>
     <history-entry file="Ex4_TestWordInSearchResult - 2018.06.23 at 11h 37m 59s.xml">
       <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex4_TestWordInSearchResult - 2018.06.25 at 18h 07m 53s.xml">
+      <configuration name="Ex4.TestWordInSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 08m 35s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 10m 43s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 11m 58s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 14m 32s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 14m 55s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex2 - 2018.06.25 at 18h 16m 28s.xml">
+      <configuration name="Ex2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -318,6 +318,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Ex4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="111" lean-forward="true" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -428,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -447,8 +447,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="66" column="111" lean-forward="true" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
+        <state relative-caret-position="435">
+          <caret line="66" column="111" selection-start-line="66" selection-start-column="111" selection-end-line="66" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="49" column="107" selection-start-line="49" selection-start-column="107" selection-end-line="49" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

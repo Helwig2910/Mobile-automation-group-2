@@ -1,6 +1,7 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -46,10 +47,18 @@ public class Ex2 {
                5
         );
 
-        waitForElementPresent(                            // ищем фоновый текстовый шаблон в поле поиска
-                By.xpath("//*[contains(@text,'Search…')]"),
+        WebElement title_element = waitForElementPresent(                            // ищем фоновый текстовый шаблон в поле поиска
+                By.id("org.wikipedia:id/search_src_text"),
                 "Cannot find search input field",
                 10
+        );
+
+        String search_title = title_element.getAttribute("text");              // передаем текст из элемента в переменную
+
+        Assert.assertEquals(                                                      // сравниваем текст из элемента с эталоном
+                "Wrong title",
+                "Search…",
+                search_title
         );
     }
 
