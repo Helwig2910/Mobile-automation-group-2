@@ -1,9 +1,6 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -50,7 +47,7 @@ public class Ex4 {
         waitForElementAndSendKeys(                       // ждем оотбражения поля ввода и эмулируем ввод с клавиатуры
                 By.id("org.wikipedia:id/search_src_text"),
                 "Pumpkin",
-                "Sannot find search input",
+                "Cannot find search input",
                 5
         );
         List<WebElement> elements = waitForElementsPresent(       // ждем появления элементов, содержащих указанный текст
@@ -59,8 +56,11 @@ public class Ex4 {
                 20
         );
 
-        for(WebElement element: elements){                             // условие проверки для элементов из списка
-            Assert.assertTrue(element.getText().contains("Pumpkin"));
+        for(WebElement element: elements)                         // условие проверки для элементов из списка
+        {
+                String word = element.getText();
+                Assert.assertTrue(word.toLowerCase().contains("Pumpkin".toLowerCase()));
+                Assert.assertTrue(word.contains("Pumpkin"));
         }
     }
 
