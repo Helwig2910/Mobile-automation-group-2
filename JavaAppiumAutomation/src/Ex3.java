@@ -60,7 +60,7 @@ public class Ex3 {
                 15
         );
 
-        Assert.assertTrue(list.size() > 1);         // сравниваем размер списка результатов поиска с единицей
+        Assert.assertTrue("Wrong quantity of search results",list.size() > 1);         // сравниваем размер списка результатов поиска с единицей
 
         waitForElementAndClear(                        // очищаем поле ввода на всякий случай
                 By.id("org.wikipedia:id/search_src_text"),
