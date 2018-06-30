@@ -12,25 +12,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FromVideo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FromVideo.java">
+      <file leaf-file-name="Ex7.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ex7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="421" column="76" lean-forward="true" selection-start-line="420" selection-start-column="12" selection-end-line="421" selection-end-column="76" />
+            <state relative-caret-position="441">
+              <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ex6.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ex6.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1412#1413#0" expanded="true" />
+                <element signature="e#1441#1442#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +43,9 @@
         <option value="$PROJECT_DIR$/src/Ex4.java" />
         <option value="$PROJECT_DIR$/src/Ex3.java" />
         <option value="$PROJECT_DIR$/src/Ex5.java" />
-        <option value="$PROJECT_DIR$/src/FromVideo.java" />
         <option value="$PROJECT_DIR$/src/Ex6.java" />
+        <option value="$PROJECT_DIR$/src/FromVideo.java" />
+        <option value="$PROJECT_DIR$/src/Ex7.java" />
       </list>
     </option>
   </component>
@@ -68,8 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,6 +76,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -107,26 +98,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Ex6">
+  <component name="RunManager" selected="JUnit.Ex7">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Ex5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Ex5" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="Ex6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
@@ -145,13 +119,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FromVideo.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Ex7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FromVideo" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
+      <option name="MAIN_CLASS_NAME" value="Ex7" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Ex7.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex7" />
+      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -179,13 +170,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FromVideo.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FromVideo.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FromVideo" />
-      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
+      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -235,19 +226,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FromVideo.saveFirstArticleToMyList" />
-      <item itemvalue="JUnit.Ex5" />
-      <item itemvalue="JUnit.FromVideo.testAmountOfNotEmptySearch" />
       <item itemvalue="JUnit.FromVideo.testAmountOfEmptySearch" />
       <item itemvalue="JUnit.Ex6" />
+      <item itemvalue="JUnit.FromVideo.testChangeScreenOrientationOnSearchResults" />
+      <item itemvalue="JUnit.Ex7" />
+      <item itemvalue="JUnit.Ex7.testChangeScreenOrientationOnSearchResults" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Ex7" />
+        <item itemvalue="JUnit.Ex7.testChangeScreenOrientationOnSearchResults" />
+        <item itemvalue="JUnit.FromVideo.testChangeScreenOrientationOnSearchResults" />
         <item itemvalue="JUnit.Ex6" />
         <item itemvalue="JUnit.FromVideo.testAmountOfEmptySearch" />
-        <item itemvalue="JUnit.FromVideo.testAmountOfNotEmptySearch" />
-        <item itemvalue="JUnit.Ex5" />
-        <item itemvalue="JUnit.FromVideo.saveFirstArticleToMyList" />
       </list>
     </recent_temporary>
   </component>
@@ -265,40 +256,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FromVideo_testAmountOfEmptySearch - 2018.06.30 at 13h 20m 17s.xml">
-      <configuration name="FromVideo.testAmountOfEmptySearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FromVideo_testAmountOfEmptySearch - 2018.06.30 at 13h 21m 05s.xml">
-      <configuration name="FromVideo.testAmountOfEmptySearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 13h 38m 26s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 13h 41m 52s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 13h 42m 41s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 13h 58m 27s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 14h 00m 18s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Ex6 - 2018.06.30 at 14h 01m 12s.xml">
-      <configuration name="Ex6" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Ex6 - 2018.06.30 at 14h 02m 46s.xml">
       <configuration name="Ex6" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Ex6 - 2018.06.30 at 14h 22m 02s.xml">
       <configuration name="Ex6" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Ex6 - 2018.06.30 at 14h 59m 30s.xml">
+      <configuration name="Ex6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FromVideo_testChangeScreenOrientationOnSearchResults - 2018.06.30 at 16h 22m 35s.xml">
+      <configuration name="FromVideo.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FromVideo_testChangeScreenOrientationOnSearchResults - 2018.06.30 at 16h 25m 15s.xml">
+      <configuration name="FromVideo.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex7 - 2018.06.30 at 16h 36m 47s.xml">
+      <configuration name="Ex7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex7_testChangeScreenOrientationOnSearchResults - 2018.06.30 at 16h 37m 52s.xml">
+      <configuration name="Ex7.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex7_testChangeScreenOrientationOnSearchResults - 2018.06.30 at 16h 39m 41s.xml">
+      <configuration name="Ex7.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex7 - 2018.06.30 at 16h 45m 01s.xml">
+      <configuration name="Ex7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Ex7 - 2018.06.30 at 16h 49m 18s.xml">
+      <configuration name="Ex7" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="101" y="0" width="1621" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -309,11 +299,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21557632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21557632" />
       <window_info id="Learn" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -333,6 +323,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Ex6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="123" lean-forward="true" selection-start-line="56" selection-start-column="123" selection-end-line="56" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FromVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7157">
+          <caret line="421" column="76" lean-forward="true" selection-start-line="420" selection-start-column="12" selection-end-line="421" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FromVideo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3910">
@@ -560,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -597,10 +617,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FromVideo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="421" column="76" lean-forward="true" selection-start-line="420" selection-start-column="12" selection-end-line="421" selection-end-column="76" />
+        <state relative-caret-position="510">
+          <caret line="489" column="1" lean-forward="true" selection-start-line="373" selection-start-column="4" selection-end-line="489" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -609,10 +639,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ex6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        <state relative-caret-position="334">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ex7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
           </folding>
         </state>
       </provider>
