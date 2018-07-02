@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class Ex6 {
 
@@ -42,7 +43,7 @@ public class Ex6 {
                 "Cannot find 'Search Wikipedia' input",
                 5
         );
-        String search_line = "Bagpipes";                                           // задаем поисковый запрос в переменной
+        String search_line = "Bagpipes";                                         // задаем поисковый запрос в переменной
         waitForElementAndSendKeys(                                               // вводим поисковый запрос
                 By.id("org.wikipedia:id/search_src_text"),
                 search_line,
@@ -54,7 +55,7 @@ public class Ex6 {
                 "Cannot find 'Bagpipes' article",
                 5
         );
-        assertElementPresent(                                                   // проверяем наличие заголовка без ожидания
+        assertElementPresent(                                                    // проверяем наличие элемента заголовка без ожидания
                 By.id("org.wikipedia:id/view_page_title_text")
         );
     }
@@ -79,10 +80,10 @@ public class Ex6 {
         return element;
     }
 
-    private void assertElementPresent(By by)     // метод проверки находит элемент, предеает его в переменную, забирает из него текст и сравнивает по тексту
+    private void assertElementPresent(By by)     // метод проверки находит список элементов, передает размер списка в переменную и сравнивает с 0
     {
-        WebElement element = driver.findElement(by);
-        String article_title = element.getAttribute("text");
-        Assert.assertTrue("Cannot find article tittle 'Bagpipes",article_title.contains("Bagpipes"));
+        List<WebElement> elements = driver.findElements(by);
+        int article_present = elements.size();
+        Assert.assertTrue("Cannot find article tittle on article page", article_present > 0);
     }
 }
