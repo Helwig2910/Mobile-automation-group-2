@@ -84,6 +84,11 @@ public class Ex6 {
     {
         List<WebElement> elements = driver.findElements(by);
         int article_present = elements.size();
-        Assert.assertTrue("Cannot find article tittle on article page", article_present > 0);
+        for(WebElement element: elements)
+        {
+            String tittle = element.getText();
+            String error = "Cannot find element " + tittle + "on article page";
+            Assert.assertTrue(error, article_present > 0);
+        }
     }
 }
