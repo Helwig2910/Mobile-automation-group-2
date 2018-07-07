@@ -1,22 +1,10 @@
 import lib.CoreTestCase;
-import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
-import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class Ex3 extends CoreTestCase {
-
-    private MainPageObject MainPageObject;
-
-    protected void setUp() throws Exception
-    {
-        super.setUp();
-
-        MainPageObject = new MainPageObject(driver);
-    }
 
     @Test
     public void testCancelSearch()
@@ -27,7 +15,7 @@ public class Ex3 extends CoreTestCase {
 
         List<WebElement> list = SearchPageObject.waitForAllResultsPresent();
 
-        Assert.assertTrue("Wrong quantity of search results",list.size() > 1);         // сравниваем размер списка результатов поиска с единицей
+        assertTrue("Wrong quantity of search results",list.size() > 1);         // сравниваем размер списка результатов поиска с единицей
 
         SearchPageObject.searchClear();
         SearchPageObject.clickCancelSearch();

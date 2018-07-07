@@ -4,6 +4,10 @@ import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
+import static junit.framework.TestCase.assertTrue;
+
 public class ArticlePageObject extends MainPageObject
 {
     private static final String
@@ -108,5 +112,17 @@ public class ArticlePageObject extends MainPageObject
                 "Cannot close article. cannot find X link",
                 5
         );
+    }
+
+    public void assertElementPresent(String error_message)                                   // Метод проверки заголовка статьи без ожидания
+    {
+        List<WebElement> elements = driver.findElements(By.id(TITTLE));
+        int article_present = elements.size();
+        for(WebElement element: elements)
+        {
+            String tittle = element.getText();
+            String error = error_message + tittle;
+            assertTrue(error, article_present > 0);
+        }
     }
 }

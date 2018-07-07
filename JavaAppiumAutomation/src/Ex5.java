@@ -1,18 +1,8 @@
 import lib.CoreTestCase;
 import lib.ui.*;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class Ex5 extends CoreTestCase {
-
-    private MainPageObject MainPageObject;
-
-    protected void setUp() throws Exception
-    {
-        super.setUp();
-
-        MainPageObject = new MainPageObject(driver);
-    }
 
     @Test
     public void testSaveTwoArticleToMyFolder()
@@ -48,6 +38,6 @@ public class Ex5 extends CoreTestCase {
         MyListsPageObject.swipeByArticleToDelete(article_title_2);
         MyListsPageObject.clickOnArticleInMyList(article_tittle_1);
 
-        Assert.assertTrue("Wrong article tittle, not 'Carbon'",my_title.contains("Carbon"));       // проверяем заголовок статьи
+        assertTrue("Wrong article tittle, not 'Carbon'",my_title.contains("Carbon"));       // проверяем заголовок статьи
     }
 }

@@ -143,16 +143,4 @@ public class MainPageObject {
         WebElement element = waitForElementPresent(by, error_message, timoutInSeconds);
         return element.getAttribute(attribute);
     }
-
-    public void assertElementPresent(By by)     // метод проверки находит список элементов, передает размер списка в переменную и сравнивает с 0
-    {
-        List<WebElement> elements = driver.findElements(by);
-        int article_present = elements.size();
-        for(WebElement element: elements)
-        {
-            String tittle = element.getText();
-            String error = "Cannot find element " + tittle + "on article page";
-            Assert.assertTrue(error, article_present > 0);
-        }
-    }
 }

@@ -1,19 +1,9 @@
 import lib.CoreTestCase;
-import lib.ui.MainPageObject;
+import lib.ui.ArticlePageObject;
 import lib.ui.SearchPageObject;
 import org.junit.Test;
-import org.openqa.selenium.*;
 
 public class Ex6 extends CoreTestCase {
-
-    private lib.ui.MainPageObject MainPageObject;
-
-    protected void setUp() throws Exception
-    {
-        super.setUp();
-
-        MainPageObject = new MainPageObject(driver);
-    }
 
     @Test
     public void testTittlePresent()
@@ -23,8 +13,7 @@ public class Ex6 extends CoreTestCase {
         SearchPageObject.typeSearchLine("Bagpipes");
         SearchPageObject.clickByArticleWithSubstring("Musical instrument");
 
-        MainPageObject.assertElementPresent(                                                    // проверяем наличие элемента заголовка без ожидания
-                By.id("org.wikipedia:id/view_page_title_text")
-        );
+        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
+        ArticlePageObject.assertElementPresent("On article page cannot find tittle text ");
     }
 }
