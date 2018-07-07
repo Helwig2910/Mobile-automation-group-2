@@ -32,6 +32,7 @@ public class Ex7 {
         capabilities.setCapability("app", "D:/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver.rotate(ScreenOrientation.PORTRAIT);                                                         // предустановка ориентации экрана
     }
 
     @After
@@ -81,18 +82,6 @@ public class Ex7 {
                 tittle_before_rotation,
                 tittle_after_rotation
         );
-
-        ScreenOrientation orientation = driver.getOrientation();                                 // сохраняем текущую ориентацию в переменную
-
-        String current_orient = orientation.toString();                                          // преобразуем в строку
-
-        if(current_orient == "LANDSCAPE")                                                        // если текущая ориентация "ландшафт", поворачиваем и проверяем новую ориентацию
-        {
-            driver.rotate(ScreenOrientation.PORTRAIT);
-            ScreenOrientation orientation_final = driver.getOrientation();
-            String new_orient = orientation_final.toString();
-            Assert.assertTrue("Still landscape screen orientation",new_orient == "PORTRAIT");
-        }
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)

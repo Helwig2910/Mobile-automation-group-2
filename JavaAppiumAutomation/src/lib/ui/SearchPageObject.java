@@ -12,6 +12,8 @@ public class SearchPageObject extends MainPageObject
             SEARCH_INIT_ELEMENT = "org.wikipedia:id/search_container",
             SEARCH_INPUT = "//*[contains(@text,'Search Wikipedia')]",
             SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
+            SEARCH_RESULT_ELEMENT = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[contains(@class,'android.widget.LinearLayout')]",
+            SEARCH_EMPTY_RESULTS_ELEMENT = "//*[@text='No results found']",
             SEARCH_PLACEHOLDER = "org.wikipedia:id/search_src_text",
             SEARCH_RESULTS_LIST = "org.wikipedia:id/search_results_list",
             SEARCH_RESULTS_ELEMENTS = "//*[@resource-id='org.wikipedia:id/search_results_list']//*[contains(@class,'android.widget.LinearLayout')]",
@@ -119,5 +121,25 @@ public class SearchPageObject extends MainPageObject
     {
         String tittle_xpath = getXpathByTittle(tittle);
         return this.waitForElementsPresent(By.xpath(tittle_xpath), "Cannot find elements with class 'LinearLayout'",15);
+    }
+
+    public int getAmountOfFoundArticles()
+    {
+        this.waitForElementPresent(
+                By.xpath(SEARCH_RESULT_ELEMENT),
+                "Cannot find anything by the request",
+                15
+        );
+        return this.getAmountOfElements(By.xpath(SEARCH_RESULT_ELEMENT));
+    }
+
+    public void waitForEmptyResultsLabel()
+    {
+        this.waitForElementPresent(By.xpath(SEARCH_EMPTY_RESULTS_ELEMENT), "Cannot find empty results label by the request", 15);
+    }
+
+    public void assertThreIsNoResultOfSearch()
+    {
+        this.assertElementNotPresent(By.xpath(SEARCH_RESULT_ELEMENT),"We supposed not to find any results");
     }
 }
