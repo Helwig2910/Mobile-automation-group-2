@@ -14,6 +14,6 @@ public class Ex6 extends CoreTestCase {
         SearchPageObject.clickByArticleWithSubstring("Musical instrument");
 
         ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
-        ArticlePageObject.assertElementPresent("On article page cannot find tittle text ");
+        ArticlePageObject.assertTittlePresent("On article page cannot find tittle text ");
     }
 }

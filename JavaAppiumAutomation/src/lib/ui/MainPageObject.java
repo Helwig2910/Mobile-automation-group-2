@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static junit.framework.TestCase.assertTrue;
+
 public class MainPageObject {
 
     protected AppiumDriver driver;
@@ -142,5 +144,17 @@ public class MainPageObject {
     {
         WebElement element = waitForElementPresent(by, error_message, timoutInSeconds);
         return element.getAttribute(attribute);
+    }
+
+    public void assertElementPresent(By by, String error_message)                                   // Метод проверки наличия элемента
+    {
+        List<WebElement> elements = driver.findElements(by);
+        int article_present = elements.size();
+        for(WebElement element: elements)
+        {
+            String tittle = element.getText();
+            String error = error_message + tittle;
+            assertTrue(error, article_present > 0);
+        }
     }
 }

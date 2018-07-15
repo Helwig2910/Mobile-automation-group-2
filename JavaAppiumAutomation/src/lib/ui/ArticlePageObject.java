@@ -114,15 +114,8 @@ public class ArticlePageObject extends MainPageObject
         );
     }
 
-    public void assertElementPresent(String error_message)                                   // Метод проверки заголовка статьи без ожидания
+    public void assertTittlePresent(String error_message)                                   // Метод проверки заголовка статьи без ожидания
     {
-        List<WebElement> elements = driver.findElements(By.id(TITTLE));
-        int article_present = elements.size();
-        for(WebElement element: elements)
-        {
-            String tittle = element.getText();
-            String error = error_message + tittle;
-            assertTrue(error, article_present > 0);
-        }
+        this.assertElementPresent(By.id(TITTLE),error_message);
     }
 }
