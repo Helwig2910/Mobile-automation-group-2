@@ -150,11 +150,6 @@ public class MainPageObject {
     {
         List<WebElement> elements = driver.findElements(by);
         int article_present = elements.size();
-        for(WebElement element: elements)
-        {
-            String tittle = element.getText();
-            String error = error_message + tittle;
-            assertTrue(error, article_present > 0);
-        }
+        assertTrue(error_message, article_present > 0);
     }
 }
