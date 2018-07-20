@@ -1,6 +1,7 @@
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class Ex6 extends CoreTestCase {
@@ -8,7 +9,7 @@ public class Ex6 extends CoreTestCase {
     @Test
     public void testTittlePresent()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Bagpipes");
         SearchPageObject.clickByArticleWithSubstring("Musical instrument");

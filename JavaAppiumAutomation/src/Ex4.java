@@ -1,5 +1,6 @@
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.*;
 import org.openqa.selenium.WebElement;
 import java.util.List;
@@ -9,7 +10,7 @@ public class Ex4 extends CoreTestCase {
     @Test
     public void testWordInSearchResult()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Pumpkin");
         String tittle = "Pumpkin";

@@ -1,5 +1,6 @@
 import lib.CoreTestCase;
 import lib.ui.*;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class Ex5 extends CoreTestCase {
@@ -7,7 +8,7 @@ public class Ex5 extends CoreTestCase {
     @Test
     public void testSaveTwoArticleToMyFolder()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Carbon");
         SearchPageObject.clickByArticleWithSubstring("Carbon");

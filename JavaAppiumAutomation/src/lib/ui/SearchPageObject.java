@@ -5,20 +5,20 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageObject extends MainPageObject
+abstract public class SearchPageObject extends MainPageObject
 {
-    private static final String
-            SEARCH_INIT_ELEMENT = "id:org.wikipedia:id/search_container",
-            SEARCH_INPUT = "xpath://*[contains(@text,'Search Wikipedia')]",
-            SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn",
-            SEARCH_RESULT_ELEMENT = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']/*[contains(@class,'android.widget.LinearLayout')]",
-            SEARCH_EMPTY_RESULTS_ELEMENT = "xpath://*[@text='No results found']",
-            SEARCH_PLACEHOLDER = "id:org.wikipedia:id/search_src_text",
-            SEARCH_RESULTS_LIST = "id:org.wikipedia:id/search_results_list",
-            SEARCH_RESULTS_ELEMENTS = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']//*[contains(@class,'android.widget.LinearLayout')]",
-            SEARCH_RESULTS_ELEMENTS_BY_TEXT = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']//*[@text='{TITTLE}']",
-            SEARCH_RESULT_BY_SUBSTRING_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='{SUBSTRING}']",
-            SEARCH_TIP = "xpath://android.widget.TextView[@text='{TIP}']";
+    protected static String
+            SEARCH_INIT_ELEMENT,
+            SEARCH_INPUT,
+            SEARCH_CANCEL_BUTTON,
+            SEARCH_RESULT_ELEMENT,
+            SEARCH_EMPTY_RESULTS_ELEMENT,
+            SEARCH_PLACEHOLDER,
+            SEARCH_RESULTS_LIST,
+            SEARCH_RESULTS_ELEMENTS,
+            SEARCH_RESULTS_ELEMENTS_BY_TEXT,
+            SEARCH_RESULT_BY_SUBSTRING_TPL,
+            SEARCH_TIP;
 
     public SearchPageObject(AppiumDriver driver)
     {
@@ -86,7 +86,7 @@ public class SearchPageObject extends MainPageObject
 
     public void typeSearchLine(String search_line)                      // Метод ввода поискового запроса, текст задается в переменной
     {
-        this.waitForElementAndSendKeys(SEARCH_INPUT, search_line, "Cannot find and type into search input",5);
+        this.waitForElementAndSendKeys(SEARCH_INPUT, search_line, "Cannot find and type into search input",15);
     }
 
     public void waitForSearchResult(String substring)                   // Метод проверки корректной подстроки в открытой статье
