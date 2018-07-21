@@ -18,6 +18,7 @@ abstract public class SearchPageObject extends MainPageObject
             SEARCH_RESULTS_ELEMENTS,
             SEARCH_RESULTS_ELEMENTS_BY_TEXT,
             SEARCH_RESULT_BY_SUBSTRING_TPL,
+            SEARCH_CLEAR_IOS,
             SEARCH_TIP;
 
     public SearchPageObject(AppiumDriver driver)
@@ -79,6 +80,11 @@ abstract public class SearchPageObject extends MainPageObject
         this.waitForElementAndClear(SEARCH_PLACEHOLDER,"Cannot find search field to clear it",5);
     }
 
+    public void searchClearIOS()
+    {
+        this.waitForElementAndClick(SEARCH_CLEAR_IOS, "Cannot find ios search clear 'x' button", 5);
+    }
+
     public void clickCancelSearch()                                // Метод клика на кнопку отмены поиска
     {
         this.waitForElementAndClick(SEARCH_CANCEL_BUTTON,"Cannot find and click search cancel button", 5);
@@ -111,9 +117,9 @@ abstract public class SearchPageObject extends MainPageObject
         );
     }
 
-    public List<WebElement> waitForAllResultsPresent()                                    // Метод получения всех результатов поиска
+    public List<WebElement> waitForAllResultsPresent(String error_message)                                    // Метод получения всех результатов поиска
     {
-        return this.waitForElementsPresent(SEARCH_RESULTS_ELEMENTS, "Cannot find elements with class 'LinearLayout'",15);
+        return this.waitForElementsPresent(SEARCH_RESULTS_ELEMENTS, error_message,15);
     }
 
     public List<WebElement> waitForAllTittlesPresent(String tittle)                                    // Метод получения всех результатов поиска по заголовку

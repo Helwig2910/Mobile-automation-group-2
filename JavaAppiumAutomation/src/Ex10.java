@@ -6,7 +6,7 @@ import lib.ui.factories.NavigationUIFactory;
 import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
-public class Ex5 extends CoreTestCase {
+public class Ex10 extends CoreTestCase {
 
     @Test
     public void testSaveTwoArticleToMyFolder()
@@ -14,34 +14,28 @@ public class Ex5 extends CoreTestCase {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Carbon");
-        SearchPageObject.clickByArticleWithSubstring("Carbon");
+        SearchPageObject.clickByArticleWithSubstring("Chemical element with atomic number 6");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
-        ArticlePageObject.waitForTitleElement();
-        String my_title = ArticlePageObject.getArticleTittle();
-        String name_of_folder = "Ex 5";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+        ArticlePageObject.waitForSetTitleElement("Carbon");
+
+        ArticlePageObject.addArticlesToMySaved();
         ArticlePageObject.closeArticle();
 
-        SearchPageObject.initSearchInput();
-        String tip = "Carbon";
-        SearchPageObject.searchClickOnTip(tip);
         SearchPageObject.clickByArticleWithSubstring("Chemical compound");
 
-        ArticlePageObject.waitForTitleElement();
-        ArticlePageObject.addArticleToCreatedList(name_of_folder);
-        ArticlePageObject.closeArticle();
+        ArticlePageObject.waitForSetTitleElement("Carbon dioxide");
+        ArticlePageObject.addArticlesToMySaved();
+        ArticlePageObject.returnHomeScreen();
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
-        MyListsPageObject.openFolderByName(name_of_folder);
+        MyListsPageObject.closeIOSPopup();
         String article_tittle_1 = "Carbon";
         String article_title_2 = "Carbon dioxide";
         MyListsPageObject.swipeByArticleToDelete(article_title_2);
         MyListsPageObject.clickOnArticleInMyList(article_tittle_1);
-
-        assertTrue("Wrong article tittle, not 'Carbon'",my_title.contains("Carbon"));       // проверяем заголовок статьи
     }
 }
