@@ -153,6 +153,7 @@ public class MainPageObject {
     public void swipeElementToLeft(String locator, String error_message)
     {
         WebElement element = waitForElementPresent(locator, error_message, 10);
+
         int left_x = element.getLocation().getX();
         int right_x = left_x + element.getSize().getWidth();
         int upper_y = element.getLocation().getY();
@@ -169,7 +170,7 @@ public class MainPageObject {
             action.moveTo(offset_x, 0);
         }
         action.release();
-                action.perform();
+        action.perform();
     }
 
     public int getAmountOfElements (String locator)

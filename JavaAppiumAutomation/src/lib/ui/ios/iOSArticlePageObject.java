@@ -7,6 +7,8 @@ public class iOSArticlePageObject extends ArticlePageObject
 {
     static {
         TITTLE = "id:Java (programming language)";
+        TITTLE_EX10_1 = "id:Carbon";
+        TITTLE_EX10_2 = "id:Carbon dioxide";
         FOOTER_ELEMENT = "id:View article in browser";
         OPTIONS_ADD_TO_MY_LIST_BUTTON = "xpath://XCUIElementTypeButton[@name='Save for later']";
         CREATED_LIST_BUTTON = "xpath://android.widget.TextView[@text='{MY_FOLDER}']";

@@ -8,6 +8,8 @@ abstract public class ArticlePageObject extends MainPageObject
 {
     protected static String
         TITTLE,
+            TITTLE_EX10_1,
+            TITTLE_EX10_2,
         FOOTER_ELEMENT,
         OPTIONS_BUTTON,
         OPTIONS_ADD_TO_MY_LIST_BUTTON,
@@ -32,17 +34,33 @@ abstract public class ArticlePageObject extends MainPageObject
 
     public WebElement waitForTitleElement()                              // Метод ожидания заголовка статьи
     {
-        return this.waitForElementPresent(TITTLE, "Cannot find article tittle on page",20);
+        return this.waitForElementPresent(TITTLE, "Cannot find article tittle 'Java' on page",20);
     }
 
-    public WebElement waitForSetTitleElement(String tittle)                              // Метод ожидания заголовка статьи
+    public WebElement waitForTitleOneElement()                              // Метод ожидания заголовка статьи
     {
-        return this.waitForElementPresent(tittle, "Cannot find article tittle on page",20);
+        return this.waitForElementPresent(TITTLE_EX10_1, "Cannot find article tittle 'Carbon' on page",20);
+    }
+
+    public WebElement waitForTitleTwoElement()                              // Метод ожидания заголовка статьи
+    {
+        return this.waitForElementPresent(TITTLE_EX10_2, "Cannot find article tittle 'Carbon dioxide' on page",20);
     }
 
     public String getArticleTittle()                                    // Метод передачи заголовка статьи в переменную
     {
         WebElement tittle_element = waitForTitleElement();
+        if (Platform.getInstance().isAndroid()) {
+            return tittle_element.getAttribute("text");
+        }
+        else{
+            return tittle_element.getAttribute("name");
+        }
+    }
+
+    public String getArticleOneTittle()                                    // Метод передачи заголовка статьи в переменную
+    {
+        WebElement tittle_element = waitForTitleOneElement();
         if (Platform.getInstance().isAndroid()) {
             return tittle_element.getAttribute("text");
         }

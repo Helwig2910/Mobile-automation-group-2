@@ -5,6 +5,9 @@ import lib.ui.factories.MyListsPageObjectFactory;
 import lib.ui.factories.NavigationUIFactory;
 import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class Ex10 extends CoreTestCase {
 
@@ -17,14 +20,14 @@ public class Ex10 extends CoreTestCase {
         SearchPageObject.clickByArticleWithSubstring("Chemical element with atomic number 6");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
-        ArticlePageObject.waitForSetTitleElement("Carbon");
-
+        ArticlePageObject.waitForTitleOneElement();
+        String article_title = ArticlePageObject.getArticleOneTittle();
         ArticlePageObject.addArticlesToMySaved();
         ArticlePageObject.closeArticle();
 
         SearchPageObject.clickByArticleWithSubstring("Chemical compound");
 
-        ArticlePageObject.waitForSetTitleElement("Carbon dioxide");
+        ArticlePageObject.waitForTitleTwoElement();
         ArticlePageObject.addArticlesToMySaved();
         ArticlePageObject.returnHomeScreen();
 
@@ -33,9 +36,8 @@ public class Ex10 extends CoreTestCase {
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
         MyListsPageObject.closeIOSPopup();
-        String article_tittle_1 = "Carbon";
-        String article_title_2 = "Carbon dioxide";
-        MyListsPageObject.swipeByArticleToDelete(article_title_2);
-        MyListsPageObject.clickOnArticleInMyList(article_tittle_1);
+        MyListsPageObject.swipeByArticleToDelete(article_title);
+        List<WebElement> list = MyListsPageObject.waitForAllSavedArticlesPresent("Cannot find saved articles");
+        assertTrue("No one saved article present",list.size() == 1);
     }
 }
