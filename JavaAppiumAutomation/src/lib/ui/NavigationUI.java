@@ -5,7 +5,7 @@ import io.appium.java_client.AppiumDriver;
 abstract public class NavigationUI extends MainPageObject{
 
     protected static String
-        MY_LISTS_LINK;
+        MY_LISTS_LINK;   // используются константы, заданные отдельно для ios и android в соотв. PageObject'ах
 
     public NavigationUI(AppiumDriver driver)
     {

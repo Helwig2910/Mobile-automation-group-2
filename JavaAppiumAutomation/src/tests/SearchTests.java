@@ -46,6 +46,6 @@ public class SearchTests extends CoreTestCase
         String search_line = "qwegqbqehqhjy";
         SearchPageObject.typeSearchLine(search_line);
         SearchPageObject.waitForEmptyResultsLabel();
-        SearchPageObject.assertThreIsNoResultOfSearch();
+        SearchPageObject.assertThereIsNoResultOfSearch();
     }
 }

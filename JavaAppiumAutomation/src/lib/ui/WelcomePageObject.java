@@ -2,9 +2,9 @@ package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
 
-public class WelcomePageObject extends MainPageObject
+public class WelcomePageObject extends MainPageObject  // класс для работы со стартовой страницей приложения в ios
 {
-    private static final String
+    private static final String     // используются константы сразу для ios, т.к. в android данного экрана просто нет
         STEP_LEARN_MORE_LINK = "id:Learn more about Wikipedia",
         STEP_NEW_WAYS_TO_EXPLORE_TEXT = "id:New ways to explore",
         STEP_ADD_OR_EDIT_PREFERRED_LANG_TEXT = "id:Add or edit preferred languages",

@@ -24,7 +24,7 @@ public class MainPageObject {
        this.driver =  driver;
     }
 
-    public WebElement waitForElementPresent(String locator, String error_message, long timeoutInSeconds)
+    public WebElement waitForElementPresent(String locator, String error_message, long timeoutInSeconds)    // основной метод ожидания элемента
     {
         By by = this.getLocatorByString(locator);
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
@@ -34,7 +34,7 @@ public class MainPageObject {
         );
     }
 
-    public WebElement waitForElementPresent(String locator, String error_message)
+    public WebElement waitForElementPresent(String locator, String error_message)                        // метод ожидания элемента с фиксированной задержкой
     {
         return waitForElementPresent(locator, error_message, 5);
     }
@@ -47,14 +47,14 @@ public class MainPageObject {
         return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by)); // условие появления всех элементов, удовлетворяющих запросу
     }
 
-    public WebElement waitForElementAndClick(String locator, String error_message, long timeoutInSeconds)
+    public WebElement waitForElementAndClick(String locator, String error_message, long timeoutInSeconds) // метод ожидания и клика
     {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.click();
         return element;
     }
 
-    public WebElement waitForElementAndSendKeys(String locator, String value, String error_message, long timeoutInSeconds)
+    public WebElement waitForElementAndSendKeys(String locator, String value, String error_message, long timeoutInSeconds)  // метод ожидания и эмуляции ввода с клавиатуры
     {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.click();
@@ -62,7 +62,7 @@ public class MainPageObject {
         return element;
     }
 
-    public boolean waitForElementNotPresent(String locator, String error_message, long timeoutInSeconds)
+    public boolean waitForElementNotPresent(String locator, String error_message, long timeoutInSeconds)   // метод ожидания отсутствия элемента
     {
         By by = this.getLocatorByString(locator);
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
@@ -72,14 +72,14 @@ public class MainPageObject {
         );
     }
 
-    public WebElement waitForElementAndClear(String locator, String error_message, long timeoutInSeconds)
+    public WebElement waitForElementAndClear(String locator, String error_message, long timeoutInSeconds)   // метод очистки поля ввода
     {
         WebElement element = waitForElementPresent(locator, error_message, timeoutInSeconds);
         element.clear();
         return element;
     }
 
-    public void swipeUp(int timeOfSwipe)
+    public void swipeUp(int timeOfSwipe)        // метод свайпа вверз
     {
         TouchAction action = new TouchAction(driver);
         Dimension size = driver.manage().window().getSize();
@@ -97,9 +97,9 @@ public class MainPageObject {
     public void swipeUpQuick()
     {
         swipeUp(200);
-    }
+    }  // метод быстрого свайпа, основанный на свайпе вверх
 
-    public void swipeUpToFindElement(String locator, String error_message, int max_swipes)
+    public void swipeUpToFindElement(String locator, String error_message, int max_swipes)  // метод свайпа до конкретного элемента
     {
         By by = this.getLocatorByString(locator);
         int already_swiped = 0;
@@ -114,7 +114,7 @@ public class MainPageObject {
         }
     }
 
-    public void swipeUpTillElementAppear(String locator, String error_message, int max_swipes)
+    public void swipeUpTillElementAppear(String locator, String error_message, int max_swipes)  // метод свайпа для ios
     {
         int already_swiped = 0;
         while (!this.isElementLocatedOnTheScreen(locator))
@@ -127,14 +127,14 @@ public class MainPageObject {
         }
     }
 
-    public boolean isElementLocatedOnTheScreen(String locator)
+    public boolean isElementLocatedOnTheScreen(String locator)   // "триггер" наличия элемента на экране
     {
         int element_location_by_y = this.waitForElementPresent(locator, "Cannot find element by locator",1).getLocation().getY();
         int screen_size_by_y = driver.manage().window().getSize().getHeight();
         return element_location_by_y < screen_size_by_y;
     }
 
-    public void clickElementToTheRightUpperCorner(String locator, String error_message)
+    public void clickElementToTheRightUpperCorner(String locator, String error_message)   // метод клика в правый верхний угол элемента
     {
         WebElement element = this.waitForElementPresent(locator + "/..", error_message);
         int right_x = element.getLocation().getX();
@@ -150,10 +150,9 @@ public class MainPageObject {
         action.tap(point_to_clock_x, point_to_click_y).perform();
     }
 
-    public void swipeElementToLeft(String locator, String error_message)
+    public void swipeElementToLeft(String locator, String error_message)   // метод свайпа влево
     {
         WebElement element = waitForElementPresent(locator, error_message, 10);
-
         int left_x = element.getLocation().getX();
         int right_x = left_x + element.getSize().getWidth();
         int upper_y = element.getLocation().getY();
@@ -170,17 +169,17 @@ public class MainPageObject {
             action.moveTo(offset_x, 0);
         }
         action.release();
-        action.perform();
+                action.perform();
     }
 
-    public int getAmountOfElements (String locator)
+    public int getAmountOfElements (String locator)   // метод получения количества элементов
     {
         By by = this.getLocatorByString(locator);
         List elements = driver.findElements(by);
         return ((List) elements).size();
     }
 
-    public void assertElementNotPresent(String locator, String error_message)
+    public void assertElementNotPresent(String locator, String error_message)   // метод проверки, что элемент отсутствует
     {
         int amount_of_elements = getAmountOfElements(locator);
         if (amount_of_elements > 0)
@@ -190,7 +189,7 @@ public class MainPageObject {
         }
     }
 
-    public String waitForElementAndGetAttribute(String locator, String attribute, String error_message, long timoutInSeconds)
+    public String waitForElementAndGetAttribute(String locator, String attribute, String error_message, long timoutInSeconds) // метод получения атрибута элемента
     {
         WebElement element = waitForElementPresent(locator, error_message, timoutInSeconds);
         return element.getAttribute(attribute);
@@ -204,7 +203,7 @@ public class MainPageObject {
         assertTrue(error_message, article_present > 0);
     }
 
-    private By getLocatorByString(String locator_with_type)
+    private By getLocatorByString(String locator_with_type)                        // метод определения локатора элемента из константы
     {
         String[] exploded_locator = locator_with_type.split(Pattern.quote(":"),2);
         String by_type = exploded_locator[0];

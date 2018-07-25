@@ -7,7 +7,7 @@ import java.util.List;
 
 abstract public class SearchPageObject extends MainPageObject
 {
-    protected static String
+    protected static String      // используются константы, заданные отдельно для ios и android в соотв. PageObject'ах
             SEARCH_INIT_ELEMENT,
             SEARCH_INPUT,
             SEARCH_CANCEL_BUTTON,
@@ -80,7 +80,7 @@ abstract public class SearchPageObject extends MainPageObject
         this.waitForElementAndClear(SEARCH_PLACEHOLDER,"Cannot find search field to clear it",5);
     }
 
-    public void searchClearIOS()
+    public void searchClearIOS()                                  // Метод очистки поля поиска в ios
     {
         this.waitForElementAndClick(SEARCH_CLEAR_IOS, "Cannot find ios search clear 'x' button", 5);
     }
@@ -117,18 +117,18 @@ abstract public class SearchPageObject extends MainPageObject
         );
     }
 
-    public List<WebElement> waitForAllResultsPresent(String error_message)                                    // Метод получения всех результатов поиска
+    public List<WebElement> waitForAllResultsPresent(String error_message)      // Метод получения всех результатов поиска
     {
         return this.waitForElementsPresent(SEARCH_RESULTS_ELEMENTS, error_message,15);
     }
 
-    public List<WebElement> waitForAllTittlesPresent(String tittle)                                    // Метод получения всех результатов поиска по заголовку
+    public List<WebElement> waitForAllTittlesPresent(String tittle)              // Метод получения всех результатов поиска по заголовку
     {
         String tittle_xpath = getXpathByTittle(tittle);
         return this.waitForElementsPresent(tittle_xpath, "Cannot find elements with class 'LinearLayout'",15);
     }
 
-    public int getAmountOfFoundArticles()
+    public int getAmountOfFoundArticles()                                        // Метод получения количества результатов поискового запроса
     {
         this.waitForElementPresent(
                 SEARCH_RESULT_ELEMENT,
@@ -138,12 +138,12 @@ abstract public class SearchPageObject extends MainPageObject
         return this.getAmountOfElements(SEARCH_RESULT_ELEMENT);
     }
 
-    public void waitForEmptyResultsLabel()
+    public void waitForEmptyResultsLabel()                                       // Метод ожидания плейхолдера при отсутствии результатов поиска
     {
         this.waitForElementPresent(SEARCH_EMPTY_RESULTS_ELEMENT, "Cannot find empty results label by the request", 15);
     }
 
-    public void assertThreIsNoResultOfSearch()
+    public void assertThereIsNoResultOfSearch()                                  // Метод проверки отсутствия рез-тов поиска
     {
         this.assertElementNotPresent(SEARCH_RESULT_ELEMENT,"We supposed not to find any results");
     }
