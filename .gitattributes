@@ -1,1 +1,4 @@
 *.js linguist-vendored
+apks/* linguist-vendored
+lib/* linguist-vendored
+libs/* linguist-vendored
