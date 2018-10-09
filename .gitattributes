@@ -1,6 +1,6 @@
 *.js linguist-vendored
-apks/* linguist-vendored
-lib/* linguist-vendored
-libs/* linguist-vendored
-.idea/* linguist-vendored
-out/production/JavaAppiumAutomation/* linguist-vendored
+JavaAppiumAutomation/apks/* linguist-vendored
+JavaAppiumAutomation/lib/* linguist-vendored
+JavaAppiumAutomation/libs/* linguist-vendored
+JavaAppiumAutomation/.idea/* linguist-vendored
+JavaAppiumAutomation/out/production/JavaAppiumAutomation/* linguist-vendored
