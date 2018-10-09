@@ -2,3 +2,5 @@
 apks/* linguist-vendored
 lib/* linguist-vendored
 libs/* linguist-vendored
+.idea/* linguist-vendored
+out/production/JavaAppiumAutomation/* linguist-vendored
